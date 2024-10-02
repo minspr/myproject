@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Thai Food - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Royal Thai Food</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cart Section -->
+        <section class="cart-container">
+            <h1>Your Cart</h1>
+            <div id="cart-items" class="cart-grid"></div>
+            <h3>Total Price: ฿<span id="total-price">0</span></h3>
+            <button id="checkout-btn" class="checkout-btn">Checkout</button>
+        </section>
+
+        <!-- Receipt Section -->
+        <section id="receipt-section" class="hidden receipt-section">
+            <h2>Receipt</h2>
+            <p><strong>Receipt ID:</strong> <span id="receipt-id"></span></p>
+            <p><strong>Date:</strong> <span id="receipt-date"></span></p>
+            <div id="receipt-items"></div>
+            <h3>Total: ฿<span id="receipt-total-price">0</span></h3>
+            <p id="payment-message" class="hidden">Payment has been made successfully.</p>
+            <button id="back-home-btn" class="hidden">Return to Home</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Royal Thai Food. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

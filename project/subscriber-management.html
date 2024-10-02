@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Subscriber Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Royal Thai Food - Admin</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="subscriber-management.html">Manage account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-container">
+            <h1>Subscriber Management</h1>
+            <form id="subscriber-form">
+                <input type="email" id="subscriber-email" placeholder="Subscriber Email" required>
+                <input type="hidden" id="subscriber-id">
+                <button type="submit">Add/Update Subscriber</button>
+            </form>
+
+            <h2>Current Subscribers</h2>
+            <div id="subscriber-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Royal Thai Food. All rights reserved.</p>
+    </footer>
+
+    <script src="subscriber-management.js"></script>
+</body>
+</html>

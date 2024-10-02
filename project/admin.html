@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Royal Thai Food - Admin</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="login-archive.html">Manage account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-container">
+            <h1>Manage Menu Items</h1>
+            <form id="menu-form">
+                <input type="text" id="menu-name" placeholder="Food Name" required>
+                <input type="text" id="menu-price" placeholder="Price (e.g., ฿50.00)" required>
+                <input type="file" id="menu-image" accept="image/*" required>
+                <input type="hidden" id="menu-id">
+                <button type="submit">Add/Update Item</button>
+            </form>
+
+            <h2>Current Menu Items</h2>
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Royal Thai Food. All rights reserved.</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>
